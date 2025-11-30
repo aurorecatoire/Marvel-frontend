@@ -1,4 +1,4 @@
-import "./Comics.Css";
+import "./Comics.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
@@ -61,18 +61,19 @@ const Comics = ({ comicsFave, setComicsFave }) => {
           <img alt="Avengers comic" src={avengers} className="comics_side" />
           <div className="All_comics_container">
             <h1>The Marvel Chronicles</h1>
-            <div className="searchSection"> 
-              <FaSearch className="searchIcon" /> 
+            <div className="searchSection">
+              <FaSearch className="searchIcon" />
               <input /* barre de recherche*/
                 type="text"
                 placeholder="Find your comic"
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
-              /> 
+              />
             </div>
             <div className="comics_container">
               {filteredComics.map((comic) => {
-                const picture_info = /* url de l'image*/
+                const picture_info =
+                  /* url de l'image*/
                   comic.thumbnail.path + "." + comic.thumbnail.extension;
                 const isFave = comicsFave.includes(comic._id);
                 return (
@@ -86,15 +87,17 @@ const Comics = ({ comicsFave, setComicsFave }) => {
                     <p>{comic.description}</p>
                     <GoHeartFill
                       className={isFave ? "favorite" : "notFavorite"}
-                      onClick={() => { 
+                      onClick={() => {
                         {
                           comicsFave.includes(comic._id)
-                            ? removeFave({  //Si on enleve le comics des favoris
+                            ? removeFave({
+                                //Si on enleve le comics des favoris
                                 array: comicsFave,
                                 element: comic._id,
                                 setArray: setComicsFave,
                               })
-                            : addFave({ //Ajout du comics en favoris
+                            : addFave({
+                                //Ajout du comics en favoris
                                 array: comicsFave,
                                 element: comic._id,
                                 setArray: setComicsFave,
