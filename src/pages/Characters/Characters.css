@@ -1,0 +1,162 @@
+.characters_main {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* image sur les côtés */
+
+
+.characters_side {
+  width: calc((100vw - 1200px) / 2);
+  object-fit: cover;
+}
+
+
+/*  conteneur principal    */
+
+
+.All_characters_container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+}
+
+.characters_main h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+
+/* barre de recherche*/
+
+.searchSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.characters_main input {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.searchIcon {
+  position: absolute;
+  color: red;
+  right: 520px;
+  font-size: 30px;
+}
+
+
+
+/* zone des personnages*/
+
+
+.characters_container {
+  display: flex;
+  gap: 20px;
+  height: 500px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  align-self: stretch;
+}
+
+.characters_container :hover {
+  background-color: grey;
+}
+.characters_container::-webkit-scrollbar {
+  display: none;
+}
+
+.characterArticle {
+  position: relative;
+}
+
+.characters_container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.characters_container h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+.characters_container p {
+  font-size: 20px; 
+  color: red;
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+
+/* favoris */
+
+
+.favorite,
+.notFavorite {
+  position: absolute;
+  top: 2px;
+  right: 7px;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.favorite {
+  color: red;
+}
+
+
+
+/* boutons de recherche */
+
+
+.pagination_bottom {
+  height: 200px;
+  padding-top: 50px;
+}
+
+.pagination_bottom button {
+  height: 30px;
+  width: 40px;
+  margin: 0 2px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+button.onPage {
+  background-color: darkgray;
+}
+
+
+
+/* écran d'attente commun à toutes les pages */
+
+.Loading {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  color: white
+}

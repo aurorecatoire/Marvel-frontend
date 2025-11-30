@@ -1,0 +1,58 @@
+.mainOneCharacter {
+  display: flex;
+}
+
+.container_ComicsOneCharacter {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.container_ComicsOneCharacter h1 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container_ComicsOneCharacter p {
+  font-size: 60px;
+  color: red;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/*Modifications sur l'affichage du comic*/
+
+.ComicsOneCharacter {
+  display: flex;
+  overflow-x: scroll;
+  gap:10px;
+  margin: 0 30px;
+}
+
+
+.ComicsOneCharacter img {
+  width: 400px;
+  height: 620px;
+  object-fit: cover;
+}
+
+.ComicsOneCharacter h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Photos sur les côtés*/
+.charater_pict {
+  width: calc((100vw - 1200px) / 2);
+  height: 100vh;
+  object-fit: cover;
+}

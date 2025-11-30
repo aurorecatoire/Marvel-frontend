@@ -1,0 +1,143 @@
+
+.comics_main {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* images sur le côté */
+
+.comics_side {
+  width: calc((100vw - 1200px) / 2);
+  object-fit: cover;
+}
+
+/* main container */
+
+.All_comics_container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+}
+
+.comics_main h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+
+/* barre de recherche */
+
+.searchSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.comics_main input {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.searchIcon {
+  position: absolute;
+  color: red;
+  right: 520px;
+  font-size: 30px;
+}
+
+
+/* conteneur des comics */
+
+.comics_container {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  align-self: stretch;
+}
+
+.comics_container::-webkit-scrollbar {
+  display: none;
+}
+
+.comicArticle {
+  position: relative;
+}
+
+
+.comics_container :hover {
+  background-color: grey;
+}
+.comics_container img {
+  width: 200px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.comics_container h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+.comics_container p {
+  font-size: 20px; 
+  color: red;
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+
+/* Icone des favoris */
+
+.favorite,
+.notFavorite {
+  position: absolute;
+  top: 2px;
+  right: 7px;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.favorite {
+  color: red;
+}
+
+/* Boutons des pages    */
+
+
+.pagination_bottom {
+  height: 200px;
+  padding-top: 50px;
+}
+
+.pagination_bottom button {
+  height: 30px;
+  width: 40px;
+  margin: 0 2px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+button.onPage {
+  background-color: darkgray;
+}

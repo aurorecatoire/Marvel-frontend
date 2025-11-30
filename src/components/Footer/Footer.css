@@ -1,0 +1,15 @@
+footer {
+  background-color: red;
+  color: black;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 20px;
+}
+
+footer span {
+  font-weight: bold;
+}

@@ -1,0 +1,91 @@
+/*EN ABSENCE DE FAVORIS*/
+
+.no_favorite {
+  background-color: #ff0000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 80px;
+  align-items: center;
+}
+
+.no_favorite h1 {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+/*EN PRÉSENCE DE FAVORIS*/
+
+.favoriteMain {
+  display: flex;
+}
+.ironHeart {
+  width: calc((100vw - 1000px) / 2);
+  object-fit: cover;
+  object-position: center;
+}
+.favorites_container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.favorites_container h2 {
+  margin-top: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  
+}
+
+
+.favorites_container h3 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+.favorites_container h1 {
+
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+/*Section des personnages*/
+.characterShow {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 20px;
+  align-self: stretch;
+  
+}
+
+.characterShow img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/*Section des comics*/
+.comicShow {
+  display: flex;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.comicShow img {
+  width: 200px;
+  height: 310px;
+  object-fit: cover;
+}
