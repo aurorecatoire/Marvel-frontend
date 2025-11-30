@@ -4,7 +4,7 @@
 import "./Favorites.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import NoFavorite from "../../assets/img/NO_favorite.jpg";
+import NoFavorite from "../../assets/img/No_favorite.jpg";
 import heart from "../../assets/img/Favorites/heart.jpg";
 
 
