@@ -30,10 +30,9 @@
 .comicShow article {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  width: 200px; 
+  align-items: center;
+  width: 200px;
 }
-
 
 .favorites_container {
   margin: 0 auto;
@@ -51,61 +50,60 @@
   margin-top: 30px;
   font-size: 40px;
   margin-bottom: 20px;
-  
 }
-
 
 .favorites_container h3 {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  
 }
 
 .favorites_container h1 {
-
   font-size: 60px;
   margin-bottom: 20px;
 }
 
 /*Section des personnages*/
 .characterShow {
-  padding: 0 10px ;
+  padding: 0 10px;
   display: flex;
+  height: auto;
   justify-content: center;
   overflow-x: scroll;
   scroll-behavior: smooth;
   gap: 20px;
   align-self: stretch;
-  
 }
 
 .characterShow img {
   width: 200px;
   height: 200px;
   object-fit: cover;
+  margin-bottom: 5px;
 }
 
 /*Section des comics*/
 .comicShow {
-  padding: 0 10px ;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
   overflow-x: scroll;
   scroll-behavior: smooth;
   gap: 20px;
   align-self: stretch;
+  margin-bottom: 20px;
 }
 
 .comicShow img {
   width: 200px;
   height: 310px;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .characterShow article,
 .comicShow article {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
