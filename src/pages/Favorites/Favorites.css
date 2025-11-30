@@ -25,6 +25,16 @@
   object-fit: cover;
   object-position: center;
 }
+
+.characterShow article,
+.comicShow article {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 200px; 
+}
+
+
 .favorites_container {
   margin: 0 auto;
   display: flex;
@@ -60,7 +70,9 @@
 
 /*Section des personnages*/
 .characterShow {
+  padding: 0 10px ;
   display: flex;
+  justify-content: center;
   overflow-x: scroll;
   scroll-behavior: smooth;
   gap: 20px;
@@ -76,8 +88,9 @@
 
 /*Section des comics*/
 .comicShow {
+  padding: 0 10px ;
   display: flex;
-  display: flex;
+  justify-content: center;
   overflow-x: scroll;
   scroll-behavior: smooth;
   gap: 20px;
@@ -88,4 +101,11 @@
   width: 200px;
   height: 310px;
   object-fit: cover;
+}
+
+.characterShow article,
+.comicShow article {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
