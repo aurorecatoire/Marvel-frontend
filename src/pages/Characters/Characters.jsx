@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
-import NumberPages from "../../assets/NumberPages"; // fonction qui donne le champ du nombre de pages à afficher
+import NumberPages from "../../assets/NumberPages"; // nombre de page à afficher 
 import { GoHeartFill } from "react-icons/go";
 import addFave from "../../assets/AddFave";
 import removeFave from "../../assets/RemoveFave";
@@ -84,7 +84,7 @@ const Characters = ({ charactersFave, setCharactersFave }) => {
                     <img
                       onClick={() =>
                         navigate(`/character/${character._id}`, {
-                          // Quand on clique sur le titre ou la description, on arrive sur la page des comics où le personnage apparait
+                          // Quand on clique sur le titre ou la description, on arrive sur la page des comics où le personnage apparait 
                           state: {
                             comics: character.comics,
                             picture_url: picture_info,
