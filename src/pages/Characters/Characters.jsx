@@ -28,7 +28,7 @@ const Characters = ({ charactersFave, setCharactersFave }) => {
     try {
       const result = await axios.get(
         `https://site--marvel-backend--pkglxxvkdlsq.code.run/characters?limit=${limit}&skip=${skip}&name=${search}`
-      );
+      );//recupérer les personnages au fur et à mesure 
       setData(result.data);
       setNumberPage(NumberPages(page, result.data.count));
       setIsLoading(false);
