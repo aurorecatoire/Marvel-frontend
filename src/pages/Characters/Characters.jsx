@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
-import NumberPages from "../../assets/NumberPages"; // nombre de page à afficher 
+import NumberPages from "../../assets/NumberPages"; // nombre de page à afficher pour barre 
 import { GoHeartFill } from "react-icons/go";
 import addFave from "../../assets/AddFave";
 import removeFave from "../../assets/RemoveFave";
